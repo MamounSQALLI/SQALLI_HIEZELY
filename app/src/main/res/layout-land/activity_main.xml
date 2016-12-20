@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world"
+            android:layout_gravity="left|right"
+            android:id="@+id/tv_hello_world"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="60dp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#eb1e2ea8"
+            android:background="@android:drawable/toast_frame"
+            android:fontFamily="@string/abc_action_bar_home_description"
+            android:phoneNumber="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cliquer c&apos;est toster"
+            android:onClick="First_button"
+            android:id="@+id/btn_hello_world"
+            android:textColor="#2f16c1"
+            android:backgroundTint="#ffffff"
+            android:layout_above="@+id/button"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_alignStart="@+id/button2"
+            android:layout_below="@+id/tv_hello_world" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLAY"
+            android:onClick="Second_button"
+            android:id="@+id/button"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#000000"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recherche Google"
+            android:onClick="Third_button"
+            android:id="@+id/button2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#001aff"
+            android:backgroundTint="#ffffff" />
+
+
+</RelativeLayout>
